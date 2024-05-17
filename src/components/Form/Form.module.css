@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* html {
+  font-family: 'Noto Sans JP', sans-serif;
+} */
+
+.centered {
+  text-align: center;
+}
+
+.formControl {
+  margin-bottom: 1rem;
+}
+
+.formControl input,
+.formControl label {
+  display: block;
+}
+
+.formControl label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.formControl input,
+.formControl select,
+.formControl textarea {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.formControl input:focus,
+.formControl textarea:focus {
+  outline: none;
+  border-color: #333; /* Dark gray border color */
+  background-color: #f2f2f2; /* Light gray background on focus */
+}
+
+.controlGroup {
+  display: flex;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.control-group .form-control {
+  min-width: 15rem;
+  flex: 1;
+}
+
+.submitButton {
+  background-color: #ff4500; /* Orange color */
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+}
+
+.submitButton:hover {
+  background-color: #ae2e03; /* Darker shade of orange */
+}
+
+.confirmation {
+  text-align: center;
+}
