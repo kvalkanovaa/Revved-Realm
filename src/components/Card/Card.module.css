@@ -1,0 +1,104 @@
+.cars {
+  width: 346px;
+  height: 440px;
+  border: none;
+  box-shadow: 0px 0px 10px;
+  border-radius: 20px;
+  margin: 20px 20px;
+  background-color: white;
+}
+
+.car-img-wrapper {
+  width: 420px;
+  height: 230px;
+  object-fit: cover;
+  padding: 0;
+}
+
+.car-img-wrapper img {
+  width: 82.5%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 3px solid #3d3b3d;
+}
+
+@media screen and (max-width: 576px) {
+  .cars {
+    width: 75vw;
+  }
+
+  .car-img-wrapper {
+    width: 75vw;
+  }
+
+  .car-img-wrapper img {
+    width: 100%;
+  }
+}
+
+.car-name {
+  color: rgb(70, 66, 66);
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: -15px;
+}
+
+.vehicle-description {
+  color: rgb(70, 66, 66);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: #3d3b3d;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.btn:hover {
+  filter: brightness(70%); /* Slightly darken the li on hover */
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  max-width: 80%;
+  max-height: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formWrapper {
+  width: 90%;
+  max-width: 43rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ffcc99; /* Fallback for browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #ffcc99, #ff9966);
+  padding: 0.5rem 1.5rem;
+  margin: 3rem auto;
+}

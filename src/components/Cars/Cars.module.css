@@ -1,0 +1,191 @@
+.background {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  height: 400px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cars-collection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 40px;
+  justify-content: center;
+  position: relative;
+  padding-top: 60px; /* Increase padding-top to make room for the car counter */
+}
+
+.cars-collection-heading {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: 'Arial', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.car-collection-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 40px;
+  border-bottom: 3px solid black;
+}
+
+.car-collection-img img {
+  width: 220px;
+  height: 100%;
+}
+
+.cars-counter {
+  width: 175px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 10px;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  padding: 15px;
+}
+
+/* ========= Media queries start ========= */
+
+/* For laptops */
+@media screen and (max-width: 1366px) {
+  .cars-collection-heading {
+    font-size: 3rem;
+  }
+
+  .car-collection-img img {
+    width: 150px;
+  }
+
+  .cars-counter {
+    font-size: 18px;
+    width: 130px;
+    top: -25px;
+    padding: 10px;
+  }
+}
+
+/* For tablet devices */
+@media screen and (max-width: 991px) {
+  .cars-collection-heading {
+    font-size: 2.5rem;
+  }
+
+  .car-collection-img img {
+    width: 120px;
+  }
+
+  .cars-counter {
+    font-size: 16px;
+    width: 120px;
+    top: -20px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cars-collection-heading {
+    font-size: 2rem;
+  }
+
+  .car-collection-img img {
+    width: 100px;
+  }
+
+  .cars-counter {
+    font-size: 14px;
+    width: 100px;
+    top: -20px;
+    padding: 6px;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 576px) {
+  .cars-collection-heading {
+    font-size: 1.5rem;
+  }
+
+  .car-collection-img {
+    display: none;
+  }
+
+  .cars-counter {
+    display: none;
+  }
+}
+
+/* ========= Media queries end ========= */
+
+.cars-per-page {
+  background-color: blanchedalmond;
+}
+
+.btn {
+  background-color: #ff4500; /* Orange color */
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 20px 0;
+}
+
+.btn:hover {
+  background-color: #ae2e03; /* Darker shade of orange */
+}
+
+.sorter {
+  display: flex;
+  position: absolute;
+  top: -46px;
+  margin-top: 10px;
+}
+
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader Styles */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 6px solid #ff4500; /* Orange color */
+  border-top: 6px solid transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
