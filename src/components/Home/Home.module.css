@@ -1,0 +1,180 @@
+.background {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  height: 400px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainHeading,
+.topPicksHeading {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Arial', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.car-collection-wrapper {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.fancyText {
+  color: #ff4500; /* Orange color */
+  font-style: italic;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Additional Styles */
+
+.topPicks {
+  text-align: center;
+}
+
+.topPicksHeading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.carImages {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.carImage {
+  width: 350px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carImage:hover {
+  transform: scale(1.05);
+}
+
+.bookNowButton {
+  background-color: #ff4500; /* Orange color */
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 20px 0;
+}
+
+.bookNowButton:hover {
+  background-color: #ae2e03; /* Darker shade of orange */
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  max-width: 80%;
+  max-height: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.selectedImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.selectedImage:hover {
+  transform: scale(1.05);
+}
+
+.formWrapper {
+  width: 90%;
+  max-width: 43rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ffcc99; /* Fallback for browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #ffcc99, #ff9966);
+  padding: 0.5rem 1.5rem;
+  margin: 3rem auto;
+}
+
+/* ========= Media queries start ========= */
+
+/* For laptops */
+@media screen and (max-width: 1366px) {
+  .cars-collection-heading {
+    font-size: 3rem;
+  }
+  .carImage {
+    width: 300px;
+  }
+}
+
+/* For tablet devices */
+@media screen and (max-width: 991px) {
+  .cars-collection-heading {
+    font-size: 2.5rem;
+  }
+  .carImages {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carImage {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cars-collection-heading {
+    font-size: 2rem;
+  }
+  .carImage {
+    width: 300px;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 576px) {
+  .cars-collection-heading {
+    font-size: 1.5rem;
+  }
+  .carImage {
+    width: 200px;
+  }
+}
+
+/* ========= Media queries end ========= */
