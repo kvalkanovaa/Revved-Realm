@@ -32,7 +32,7 @@ const CarsCard = (props) => {
           Model: {props.cars.description}
         </p>
         <p className={styles["vehicle-description"]}>
-          Pirce: {props.cars.price} $
+          Pirce: {props.cars.price} BGN / day
         </p>
         <p className={styles["vehicle-description"]}>Color: {props.cars.color}</p>
         <button onClick={() => setIsModalOpen(true)} className={styles.btn}>
