@@ -16,7 +16,7 @@
   margin: 50px 40px;
   justify-content: center;
   position: relative;
-  padding-top: 60px; /* Increase padding-top to make room for the car counter */
+  padding-top: 60px;
 }
 
 .cars-collection-heading {
@@ -40,23 +40,6 @@
 .car-collection-img img {
   width: 220px;
   height: 100%;
-}
-
-.cars-counter {
-  width: 175px;
-  background-color: #007bff;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
-  border-radius: 10px;
-  margin: 10px;
-  position: absolute;
-  top: -30px;
-  right: 10px;
-  padding: 15px;
 }
 
 /* ========= Media queries start ========= */
